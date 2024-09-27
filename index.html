@@ -1,0 +1,2498 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./game.css">
+    <link rel="stylesheet" type="text/css" href="./app.css">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="container header__container">
+          <div class="header__row">
+            <a class="header__logo" href="/"
+              ><img
+                class="header__logo-img"
+                src="img/icons/logo.png"
+                width="205"
+                height="40"
+                alt="Школа диабета"
+            /></a>
+            <div class="header__contacts hide-lg-down">
+              <div class="header__contacts-item">
+                <div class="header__contacts-title">
+                  Горячая линия «PRO ДИАБЕТ»
+                </div>
+                <a class="header__contacts-link" href="tel:+78002006570"
+                  >8 800 200-65-70</a
+                >
+              </div>
+            </div>
+            <div class="header__panel">
+              <button
+                class="btn btn--reset btn--burger header__burger"
+                aria-label="Toggle menu"
+              ></button>
+            </div>
+          </div>
+          <div class="header__menu">
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <div class="header__nav-headline">
+                    <a class="header__nav-link" href="/0">Школа</a>
+                    <button
+                      class="btn btn--reset header__nav-toggle"
+                      aria-label="Toggle submenu"
+                    ></button>
+                  </div>
+                  <ul class="header__nav-child-list">
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c0"
+                        >Сахарный диабет 1-го типа</a
+                      >
+                    </li>
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c1"
+                        >Сахарный диабет 2-го типа</a
+                      >
+                    </li>
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c2"
+                        >Инсулинотерапия</a
+                      >
+                    </li>
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c3"
+                        >Сахарный диабет у детей</a
+                      >
+                    </li>
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c4"
+                        >Игра «Идеальная тарелка»</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__nav-item">
+                  <div class="header__nav-headline">
+                    <a class="header__nav-link" href="/1">О диабете</a>
+                    <button
+                      class="btn btn--reset header__nav-toggle"
+                      aria-label="Toggle submenu"
+                    ></button>
+                  </div>
+                  <ul class="header__nav-child-list">
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c0"
+                        >О сахарном диабете</a
+                      >
+                    </li>
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c1"
+                        >Самоконтроль</a
+                      >
+                    </li>
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c2">Питание</a>
+                    </li>
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c3"
+                        >Гипогликемия</a
+                      >
+                    </li>
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c4"
+                        >Физическая активность</a
+                      >
+                    </li>
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c5">Инсулин</a>
+                    </li>
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c6"
+                        >Гликемический индекс</a
+                      >
+                    </li>
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c7"
+                        >Материалы для печати</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__nav-item">
+                  <div class="header__nav-headline">
+                    <a class="header__nav-link" href="/2">Лечение</a>
+                    <button
+                      class="btn btn--reset header__nav-toggle"
+                      aria-label="Toggle submenu"
+                    ></button>
+                  </div>
+                  <ul class="header__nav-child-list">
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c0">Инсулин</a>
+                    </li>
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c1"
+                        >Лечение диабета 1-го типа</a
+                      >
+                    </li>
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c2"
+                        >Лечение диабета 2-го типа</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__nav-item">
+                  <div class="header__nav-headline">
+                    <a class="header__nav-link" href="/3">Библиотека знаний</a>
+                    <button
+                      class="btn btn--reset header__nav-toggle"
+                      aria-label="Toggle submenu"
+                    ></button>
+                  </div>
+                  <ul class="header__nav-child-list">
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c0"
+                        >Общие вопросы про диабет</a
+                      >
+                    </li>
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c1"
+                        >Вопросы о питании при сахарном диабете</a
+                      >
+                    </li>
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c2"
+                        >Физическая активность</a
+                      >
+                    </li>
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c3"
+                        >Вопросы про самоконтроль при сахарном диабете</a
+                      >
+                    </li>
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c4"
+                        >Вопросы о лечении сахарного диабета</a
+                      >
+                    </li>
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c5"
+                        >Вопросы про опасные ситуации при сахарном диабете</a
+                      >
+                    </li>
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c6"
+                        >Вопросы про осложнения при сахарном диабете</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__nav-item">
+                  <div class="header__nav-headline">
+                    <a class="header__nav-link" href="/4">О нас</a>
+                    <button
+                      class="btn btn--reset header__nav-toggle"
+                      aria-label="Toggle submenu"
+                    ></button>
+                  </div>
+                  <ul class="header__nav-child-list">
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c0"
+                        >О Школе диабета</a
+                      >
+                    </li>
+                    <li class="header__nav-child-item">
+                      <a class="header__nav-child-link" href="#!c1"
+                        >Обратная связь</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__search">
+              <form class="header__search-form" action="/.php" method="GET">
+                <input
+                  class="header__search-input"
+                  type="text"
+                  name="search"
+                  placeholder="Поиск по сайту"
+                />
+                <button
+                  class="btn btn--reset btn--search header__search-btn"
+                  type="button"
+                  aria-label="Send form"
+                ></button>
+              </form>
+              <div class="header__contacts hide-lg-up">
+                <div class="header__contacts-item">
+                  <div class="header__contacts-title">
+                    Горячая линия «PRO ДИАБЕТ»
+                  </div>
+                  <a class="header__contacts-link" href="tel:+78002006570"
+                    >8 800 200-65-70</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="category.html">Школа</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span class="breadcrumbs__link">Игра “Идеальная тарелка”</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-container container">
+        <section class="section">
+          <div class="section__head">
+            <div class="section__info">
+              <h2 class="section__title">Продукты</h2>
+              <div class="section__desc">Калькулятор хлебных единиц</div>
+            </div>
+          </div>
+          <div class="gm">
+            <!-- 1-->
+            <div class="gm__step gm__step_1">
+              <div class="gm__page">
+                <div class="gm__page-vertical">
+                  <div class="gm__main">
+                    <div class="gm__main-plate"></div>
+                    <div class="gm__main-head">
+                      <div class="gm__main-title"></div>
+                      <div class="gm__main-title-sub">
+                        Легкая помощь в расчете хлебных единиц<br />и составлении
+                        правильного рациона питания<br />
+                        <button
+                          class="gm__btn gm__btn_next"
+                          data-step="gm__step_2"
+                        >
+                          Соберите свою тарелку
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gm__footer">
+                <div class="gm__about">
+                  Приложение «Идеальная тарелка» предназначено для использования
+                  людьми в возрасте от 18 лет и старше и не заменяет рекомендацию
+                  специалиста. Проконсультируйтесь с вашим врачом для получения
+                  информации о питании и расчете ХЕ.
+                </div>
+              </div>
+            </div>
+            <!-- 2-->
+            <div class="gm__step gm__step_2">
+              <div class="gm__page">
+                <div class="gm__page-vertical">
+                  <div class="gm__plan">
+                    <div class="gm__plan-text">
+                      Расчет хлебных единиц (ХЕ) поможет правильно рассчитать дозу
+                      прандиального инсулина. Узнайте, сколько ХЕ нужно именно
+                      вам, прочитав статью
+                      <a
+                        href="/school/sd1/urok-3-pravilnoe-pitanie-pri-diabete/"
+                        target="_blank"
+                        >«Правильное питание при диабете»</a
+                      >.<br /><br />Игра «Идеальная тарелка» поможет вам легко
+                      составить разнообразное ежедневное меню. Введите планируемое
+                      количество ХЕ в поле ниже и нажмите кнопку «далее».
+                    </div>
+                    <div class="gm__plan-value">
+                      <span class="gm__plan-value-text-eat">Я планирую съесть</span>
+                      <div class="gm__plan-input">
+                        <input
+                          class="gm__input-xe"
+                          type="text"
+                          value
+                          maxlength="5"
+                        /><span>Введите количество</span>
+                      </div>
+                      <span class="gm__plan-value-text-xe">ХЕ</span>
+                    </div>
+                  </div>
+                  <div>
+                    <button class="gm__btn gm__btn_next" data-step="gm__step_3">
+                      Далее
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="gm__footer">
+                <div class="gm__about">
+                  Приложение «Идеальная тарелка» предназначено для использования
+                  людьми в возрасте от 18 лет и старше и не заменяет рекомендацию
+                  специалиста. Проконсультируйтесь с вашим врачом для получения
+                  информации о питании и расчете ХЕ.
+                </div>
+              </div>
+            </div>
+            <!-- 3-->
+            <div class="gm__step gm__step_3">
+              <div class="gm__page">
+                <div class="gm__page-vertical">
+                  <div class="gm__instr">
+                    <div class="gm__instr-text">Правила игры</div>
+                  </div>
+                  <div>
+                    <button class="gm__btn gm__btn_next" data-step="gm__step_4">
+                      Далее
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="gm__footer">
+                <div class="gm__about">
+                  Приложение «Идеальная тарелка» предназначено для использования
+                  людьми в возрасте от 18 лет и старше и не заменяет рекомендацию
+                  специалиста. Проконсультируйтесь с вашим врачом для получения
+                  информации о питании и расчете ХЕ.
+                </div>
+              </div>
+            </div>
+            <!-- 4-->
+            <div class="gm__step gm__step_4">
+              <div class="gm__head">
+                <div class="gm__title">Выбор меню:</div>
+                <div class="gm__calories">
+                  <div class="gm__calories-phone"></div>
+                  <div class="gm__calories-title">В вашей<br />тарелке:</div>
+                  <div class="gm__calories-val">
+                    <span class="gm__xe">0</span> ХЕ и
+                    <span class="gm__kcal">0</span> Ккал
+                  </div>
+                </div>
+              </div>
+              <div class="gm__in">
+                <div class="gm__aside">
+                  <div class="gm__select">
+                    <div class="gm__select-head"></div>
+                    <ul class="gm__select-list">
+                      <li data-key="46">Готовые блюда</li>
+                      <li data-key="54">Крупы и каши</li>
+                      <li data-key="52">Масло растительное</li>
+                      <li data-key="53">Молочные продукты</li>
+                      <li data-key="51">Мясные продукты</li>
+                      <li data-key="47">Напитки</li>
+                      <li data-key="49">Овощи свежие</li>
+                      <li data-key="50">Рыба</li>
+                      <li data-key="48">Фрукты, ягоды</li>
+                      <li data-key="55">Хлебобулочные изделия</li>
+                    </ul>
+                  </div>
+                  <div class="gm__menu">
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="822"
+                      data-kcal="144"
+                      data-xe="3"
+                      data-unit="200"
+                      data-measure="г"
+                      data-group='["48"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/680/68027694a21f2741c4930947f1bf2c2c.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/680/68027694a21f2741c4930947f1bf2c2c.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Виноград</div>
+                        <div class="gm__menu-weight">1 порция 200 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="820"
+                      data-kcal="51"
+                      data-xe="1"
+                      data-unit="15"
+                      data-measure="г"
+                      data-group='["55"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/b0d/b0d4d7b9b70fb57586f80729dd072b9a.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/b0d/b0d4d7b9b70fb57586f80729dd072b9a.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Сушка</div>
+                        <div class="gm__menu-weight">1 порция 15 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="819"
+                      data-kcal="60"
+                      data-xe="1"
+                      data-unit="30"
+                      data-measure="г"
+                      data-group='["55"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/90f/90f9b342b6b0cffc023be8907ab80a00.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/90f/90f9b342b6b0cffc023be8907ab80a00.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Хлеб бородинский</div>
+                        <div class="gm__menu-weight">1 порция 30 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="818"
+                      data-kcal="57"
+                      data-xe="1"
+                      data-unit="25"
+                      data-measure="г"
+                      data-group='["55"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/7e8/7e817790226256a91dd886224ce90b98.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/7e8/7e817790226256a91dd886224ce90b98.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Хлеб зерновой</div>
+                        <div class="gm__menu-weight">1 порция 25 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="817"
+                      data-kcal="58"
+                      data-xe="1"
+                      data-unit="25"
+                      data-measure="г"
+                      data-group='["55"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/7e2/7e20893c33992cbb78d6b2cdba20b84e.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/7e2/7e20893c33992cbb78d6b2cdba20b84e.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Хлеб ржаной</div>
+                        <div class="gm__menu-weight">1 порция 25 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="816"
+                      data-kcal="52"
+                      data-xe="1"
+                      data-unit="20"
+                      data-measure="г"
+                      data-group='["55"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/688/688d983b2681d111f1d9c4d9f3709e3a.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/688/688d983b2681d111f1d9c4d9f3709e3a.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Хлеб белый</div>
+                        <div class="gm__menu-weight">1 порция 20 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="815"
+                      data-kcal="50.7"
+                      data-xe="0.1"
+                      data-unit="30"
+                      data-measure="г"
+                      data-group='["53"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/c28/c28f425386300d3f533162d51141a080.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/c28/c28f425386300d3f533162d51141a080.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Творог 9%</div>
+                        <div class="gm__menu-weight">1 порция 30 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="814"
+                      data-kcal="292"
+                      data-xe="2"
+                      data-unit="100"
+                      data-measure="г"
+                      data-group='["54"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/9b3/9b31755397ca66fd177b0504ad348c1a.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/9b3/9b31755397ca66fd177b0504ad348c1a.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Фасоль вареная</div>
+                        <div class="gm__menu-weight">1 порция 100 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="813"
+                      data-kcal="109.2"
+                      data-xe="0"
+                      data-unit="30"
+                      data-measure="г"
+                      data-group='["53"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/83a/83a60b80c8624c06aac155fa5e59cfff.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/83a/83a60b80c8624c06aac155fa5e59cfff.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Сыр российский</div>
+                        <div class="gm__menu-weight">1 порция 30 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="812"
+                      data-kcal="130.5"
+                      data-xe="0.2"
+                      data-unit="50"
+                      data-measure="г"
+                      data-group='["51"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/5ca/5ca5d4c67bfaf57e49974722755f80c1.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/5ca/5ca5d4c67bfaf57e49974722755f80c1.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Сосиски молочные</div>
+                        <div class="gm__menu-weight">1 порция 50 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="811"
+                      data-kcal="217.8"
+                      data-xe="0"
+                      data-unit="60"
+                      data-measure="г"
+                      data-group='["50"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/d83/d833e5a9da5b17e29eabe7d2b838a3b4.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/d83/d833e5a9da5b17e29eabe7d2b838a3b4.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Шпроты в масле</div>
+                        <div class="gm__menu-weight">1 порция 60 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="810"
+                      data-kcal="57.6"
+                      data-xe="0"
+                      data-unit="60"
+                      data-measure="г"
+                      data-group='["50"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/724/724e6aebe476b33cbe0307a144077ad1.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/724/724e6aebe476b33cbe0307a144077ad1.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Тунец (консервы)</div>
+                        <div class="gm__menu-weight">1 порция 60 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_drink"
+                      data-key="809"
+                      data-kcal="76"
+                      data-xe="1.5"
+                      data-unit="200"
+                      data-measure="мл"
+                      data-group='["47"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/269/2699895159d5b16d335566ba138c759c.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/269/2699895159d5b16d335566ba138c759c.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Сок грейпфрутовый</div>
+                        <div class="gm__menu-weight">1 порция 200 мл</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_drink"
+                      data-key="808"
+                      data-kcal="56"
+                      data-xe="2.5"
+                      data-unit="200"
+                      data-measure="мл"
+                      data-group='["47"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/f47/f47af65384749b0adb645f2e617687fe.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/f47/f47af65384749b0adb645f2e617687fe.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Сок морковный</div>
+                        <div class="gm__menu-weight">1 порция 200 мл</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_drink"
+                      data-key="807"
+                      data-kcal="92"
+                      data-xe="2"
+                      data-unit="200"
+                      data-measure="мл"
+                      data-group='["47"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/264/264268db5f642967ca87b2f695b5d36f.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/264/264268db5f642967ca87b2f695b5d36f.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Сок яблочный</div>
+                        <div class="gm__menu-weight">1 порция 200 мл</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_drink"
+                      data-key="806"
+                      data-kcal="36"
+                      data-xe="0.5"
+                      data-unit="200"
+                      data-measure="мл"
+                      data-group='["47"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/0f7/0f70cae64f549ba83068a11b14425499.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/0f7/0f70cae64f549ba83068a11b14425499.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Сок томатный</div>
+                        <div class="gm__menu-weight">1 порция 200 мл</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="805"
+                      data-kcal="135"
+                      data-xe="2"
+                      data-unit="300"
+                      data-measure="мл"
+                      data-group='["46"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/6b2/6b20fdb3bd5abe1dec5c78874c49a119.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/6b2/6b20fdb3bd5abe1dec5c78874c49a119.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Суп картофельный</div>
+                        <div class="gm__menu-weight">1 порция 300 мл</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="804"
+                      data-kcal="47"
+                      data-xe="0.8"
+                      data-unit="100"
+                      data-measure="г"
+                      data-group='["49"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/b4a/b4a382dee5362f2087c941a3acb83c61.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/b4a/b4a382dee5362f2087c941a3acb83c61.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Яблоко</div>
+                        <div class="gm__menu-weight">1 порция 100 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="803"
+                      data-kcal="12"
+                      data-xe="0.16"
+                      data-unit="50"
+                      data-measure="г"
+                      data-group='["49"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/c4d/c4da6dffcc4df9beb71002fd9972b270.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/c4d/c4da6dffcc4df9beb71002fd9972b270.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Томаты</div>
+                        <div class="gm__menu-weight">1 порция 50 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="802"
+                      data-kcal="156"
+                      data-xe="1.8"
+                      data-unit="300"
+                      data-measure="г"
+                      data-group='["46"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/a11/a11dd7435f685199b279e424e7dcb3b6.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/a11/a11dd7435f685199b279e424e7dcb3b6.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Окрошка мясная</div>
+                        <div class="gm__menu-weight">1 порция 300 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="801"
+                      data-kcal="7"
+                      data-xe="0.1"
+                      data-unit="50"
+                      data-measure="г"
+                      data-group='["49"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/343/343d341c48965c622bc9bba239b95e9b.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/343/343d341c48965c622bc9bba239b95e9b.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Огурцы</div>
+                        <div class="gm__menu-weight">1 порция 50 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="800"
+                      data-kcal="15"
+                      data-xe="0.3"
+                      data-unit="30"
+                      data-measure="г"
+                      data-group='["48"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/18c/18c74552829810399234b41693a3cfbc.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/18c/18c74552829810399234b41693a3cfbc.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Слива</div>
+                        <div class="gm__menu-weight">1 порция 30 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="799"
+                      data-kcal="45"
+                      data-xe="0.8"
+                      data-unit="100"
+                      data-measure="г"
+                      data-group='["48"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/2a8/2a8813d2fa0e26a02fd89816518f4cf6.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/2a8/2a8813d2fa0e26a02fd89816518f4cf6.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Персик</div>
+                        <div class="gm__menu-weight">1 порция 100 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="798"
+                      data-kcal="12"
+                      data-xe="0.2"
+                      data-unit="30"
+                      data-measure="г"
+                      data-group='["49"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/38d/38de98cbbd9be7cd678d26cf9d738c0c.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/38d/38de98cbbd9be7cd678d26cf9d738c0c.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Лук репчатый</div>
+                        <div class="gm__menu-weight">1 порция 30 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="797"
+                      data-kcal="13"
+                      data-xe="0.3"
+                      data-unit="50"
+                      data-measure="г"
+                      data-group='["49"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/fdc/fdc70c930d82f175203803297df35349.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/fdc/fdc70c930d82f175203803297df35349.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Перец сладкий</div>
+                        <div class="gm__menu-weight">1 порция 50 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="796"
+                      data-kcal="21"
+                      data-xe="0.4"
+                      data-unit="50"
+                      data-measure="г"
+                      data-group='["49"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/84e/84e6923b4b6172431fb584533789aa4f.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/84e/84e6923b4b6172431fb584533789aa4f.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Свекла</div>
+                        <div class="gm__menu-weight">1 порция 50 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_drink"
+                      data-key="795"
+                      data-kcal="84"
+                      data-xe="0.8"
+                      data-unit="200"
+                      data-measure="мл"
+                      data-group='["47"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/891/8913c3e27019af2ab0d4cae394d59f18.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/891/8913c3e27019af2ab0d4cae394d59f18.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Пиво 4,5% алк.</div>
+                        <div class="gm__menu-weight">1 порция 200 мл</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="794"
+                      data-kcal="92"
+                      data-xe="1.6"
+                      data-unit="200"
+                      data-measure="г"
+                      data-group='["48"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/94c/94cc5cce301bbb17aa1fef4a817345c6.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/94c/94cc5cce301bbb17aa1fef4a817345c6.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Малина</div>
+                        <div class="gm__menu-weight">1 порция 200 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="793"
+                      data-kcal="438"
+                      data-xe="2.5"
+                      data-unit="150"
+                      data-measure="г"
+                      data-group='["46"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/b0b/b0b217c9257c46b75d6aa19d5ccdd97d.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/b0b/b0b217c9257c46b75d6aa19d5ccdd97d.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Пельмени</div>
+                        <div class="gm__menu-weight">1 порция 150 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="792"
+                      data-kcal="45"
+                      data-xe="0"
+                      data-unit="60"
+                      data-measure="г"
+                      data-group='["50"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/66c/66cff7a512681c50c436752daf0662ea.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/66c/66cff7a512681c50c436752daf0662ea.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Минтай отварной</div>
+                        <div class="gm__menu-weight">1 порция 60 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="791"
+                      data-kcal="190"
+                      data-xe="0"
+                      data-unit="60"
+                      data-measure="г"
+                      data-group='["50"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/53f/53f0bc0c5fd4f85aa418c682af072aeb.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/53f/53f0bc0c5fd4f85aa418c682af072aeb.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Скумбрия в масле</div>
+                        <div class="gm__menu-weight">1 порция 60 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="790"
+                      data-kcal="124.8"
+                      data-xe="0.5"
+                      data-unit="60"
+                      data-measure="г"
+                      data-group='["51"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/0c6/0c6f142a2465812e85993f319e6df161.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/0c6/0c6f142a2465812e85993f319e6df161.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Печень говяжья</div>
+                        <div class="gm__menu-weight">1 порция 60 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="789"
+                      data-kcal="141"
+                      data-xe="0.2"
+                      data-unit="60"
+                      data-measure="г"
+                      data-group='["51"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/a08/a082d6849e1febf343e5d992e270222a.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/a08/a082d6849e1febf343e5d992e270222a.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Свинина тушеная</div>
+                        <div class="gm__menu-weight">1 порция 60 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="788"
+                      data-kcal="223.8"
+                      data-xe="0"
+                      data-unit="60"
+                      data-measure="г"
+                      data-group='["51"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/762/762af7f03e494fc21b7185d6c82d1d70.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/762/762af7f03e494fc21b7185d6c82d1d70.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Свинина отварная</div>
+                        <div class="gm__menu-weight">1 порция 60 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="787"
+                      data-kcal="159"
+                      data-xe="0"
+                      data-unit="75"
+                      data-measure="г"
+                      data-group='["51"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/64d/64dc3aa9215e5aa207e77a1d570d2e9c.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/64d/64dc3aa9215e5aa207e77a1d570d2e9c.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Курица отварная</div>
+                        <div class="gm__menu-weight">1 порция 75 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="786"
+                      data-kcal="46"
+                      data-xe="0"
+                      data-unit="10"
+                      data-measure="г"
+                      data-group='["51"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/d48/d4841109ec6e422c4b5ee280427062d7.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/d48/d4841109ec6e422c4b5ee280427062d7.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Сервелат</div>
+                        <div class="gm__menu-weight">1 порция 10 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="785"
+                      data-kcal="45"
+                      data-xe="0"
+                      data-unit="5"
+                      data-measure="г"
+                      data-group='["52"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/b33/b33be124a08f4796b2e3a9e77242692d.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/b33/b33be124a08f4796b2e3a9e77242692d.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Масло оливковое</div>
+                        <div class="gm__menu-weight">1 порция 5 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="784"
+                      data-kcal="45"
+                      data-xe="0"
+                      data-unit="5"
+                      data-measure="г"
+                      data-group='["52"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/9af/9afc13c7b4414e9c780c8f636af14982.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/9af/9afc13c7b4414e9c780c8f636af14982.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Масло подсолнечное</div>
+                        <div class="gm__menu-weight">1 порция 5 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="783"
+                      data-kcal="33"
+                      data-xe="0.01"
+                      data-unit="5"
+                      data-measure="г"
+                      data-group='["53"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/da0/da04797d945ac2813e8b3f0d41d82bf4.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/da0/da04797d945ac2813e8b3f0d41d82bf4.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Масло сливочное</div>
+                        <div class="gm__menu-weight">1 порция 5 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="782"
+                      data-kcal="29.8"
+                      data-xe="0.1"
+                      data-unit="25"
+                      data-measure="г"
+                      data-group='["53"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/4da/4da06ca51ec418135c3a1953174fd3c5.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/4da/4da06ca51ec418135c3a1953174fd3c5.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Сметана 10%</div>
+                        <div class="gm__menu-weight">1 порция 25 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="781"
+                      data-kcal="98"
+                      data-xe="2"
+                      data-unit="100"
+                      data-measure="г"
+                      data-group='["55"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/cf1/cf139f92289ecacc08c3dfbf62cc1955.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/cf1/cf139f92289ecacc08c3dfbf62cc1955.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Макароны отварные</div>
+                        <div class="gm__menu-weight">1 порция 100 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_drink"
+                      data-key="780"
+                      data-kcal="108"
+                      data-xe="0.8"
+                      data-unit="200"
+                      data-measure="мл"
+                      data-group='["53"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/912/9126e8839bdfba3c44df7bdf1eda7241.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/912/9126e8839bdfba3c44df7bdf1eda7241.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Молоко 2,5%</div>
+                        <div class="gm__menu-weight">1 порция 200 мл</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="779"
+                      data-kcal="101"
+                      data-xe="2"
+                      data-unit="100"
+                      data-measure="г"
+                      data-group='["54"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/0c0/0c0b8fec80e869d4c7236dd21e18df0d.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/0c0/0c0b8fec80e869d4c7236dd21e18df0d.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Каша гречневая</div>
+                        <div class="gm__menu-weight">1 порция 100 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="778"
+                      data-kcal="109"
+                      data-xe="2"
+                      data-unit="100"
+                      data-measure="г"
+                      data-group='["54"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/287/287e02dfc53afc6824d6ab4272644586.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/287/287e02dfc53afc6824d6ab4272644586.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Каша овсяная</div>
+                        <div class="gm__menu-weight">1 порция 100 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="777"
+                      data-kcal="105"
+                      data-xe="2"
+                      data-unit="100"
+                      data-measure="г"
+                      data-group='["54"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/4ae/4ae79f543c7e94ffb25fb41793814d2f.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/4ae/4ae79f543c7e94ffb25fb41793814d2f.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Каша геркулесовая</div>
+                        <div class="gm__menu-weight">1 порция 100 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="776"
+                      data-kcal="144"
+                      data-xe="2"
+                      data-unit="100"
+                      data-measure="г"
+                      data-group='["54"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/47a/47ab311a912e3c1680ae506e9f84332e.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/47a/47ab311a912e3c1680ae506e9f84332e.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Каша рисовая</div>
+                        <div class="gm__menu-weight">1 порция 100 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="775"
+                      data-kcal="22"
+                      data-xe="1"
+                      data-unit="15"
+                      data-measure="г"
+                      data-group='["55"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/4dd/4dd944ba2770a85fb8c3e9aa8af653dd.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/4dd/4dd944ba2770a85fb8c3e9aa8af653dd.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Крекер</div>
+                        <div class="gm__menu-weight">1 порция 15 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="774"
+                      data-kcal="77"
+                      data-xe="0.1"
+                      data-unit="30"
+                      data-measure="г"
+                      data-group='["51"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/ca0/ca0d45660c291f4ba9ab7d31be73767f.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/ca0/ca0d45660c291f4ba9ab7d31be73767f.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Колбаса докторская</div>
+                        <div class="gm__menu-weight">1 порция 30 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="773"
+                      data-kcal="152"
+                      data-xe="0"
+                      data-unit="75"
+                      data-measure="г"
+                      data-group='["51"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/f4f/f4fc05d2731f348559ad164d0bc0755d.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/f4f/f4fc05d2731f348559ad164d0bc0755d.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Курица жареная</div>
+                        <div class="gm__menu-weight">1 порция 75 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_drink"
+                      data-key="772"
+                      data-kcal="106"
+                      data-xe="0.8"
+                      data-unit="200"
+                      data-measure="мл"
+                      data-group='["53"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/e2e/e2ee51da11ceeecadee3aca9474af261.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/e2e/e2ee51da11ceeecadee3aca9474af261.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Кефир 2,5%</div>
+                        <div class="gm__menu-weight">1 порция 200 мл</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_drink"
+                      data-key="771"
+                      data-kcal="176"
+                      data-xe="4"
+                      data-unit="200"
+                      data-measure="мл"
+                      data-group='["47"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/76c/76ce39f480d6fba76c234f5407257bce.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/76c/76ce39f480d6fba76c234f5407257bce.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Компот фруктовый</div>
+                        <div class="gm__menu-weight">1 порция 200 мл</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_drink"
+                      data-key="770"
+                      data-kcal="84"
+                      data-xe="2"
+                      data-unit="200"
+                      data-measure="мл"
+                      data-group='["47"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/7f2/7f23cca0cd34f7d8eb9b8230d72ace8d.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/7f2/7f23cca0cd34f7d8eb9b8230d72ace8d.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Кока-кола</div>
+                        <div class="gm__menu-weight">1 порция 200 мл</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_drink"
+                      data-key="769"
+                      data-kcal="54"
+                      data-xe="1"
+                      data-unit="200"
+                      data-measure="мл"
+                      data-group='["47"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/409/409afa2b84a4b05974f1ecb3891b8801.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/409/409afa2b84a4b05974f1ecb3891b8801.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Квас</div>
+                        <div class="gm__menu-weight">1 порция 200 мл</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="768"
+                      data-kcal="699"
+                      data-xe="0"
+                      data-unit="150"
+                      data-measure="г"
+                      data-group='["46"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/c36/c361c1d80eeae214a674d273118bdc75.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/c36/c361c1d80eeae214a674d273118bdc75.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Котлеты свиные</div>
+                        <div class="gm__menu-weight">1 порция 150 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="767"
+                      data-kcal="173"
+                      data-xe="1.3"
+                      data-unit="100"
+                      data-measure="г"
+                      data-group='["46"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/74b/74b497cfbe2771bf7c7995e90e4c004f.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/74b/74b497cfbe2771bf7c7995e90e4c004f.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Вареники ленивые</div>
+                        <div class="gm__menu-weight">1 порция 100 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="766"
+                      data-kcal="23"
+                      data-xe="0.3"
+                      data-unit="100"
+                      data-measure="г"
+                      data-group='["49"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/9a7/9a761a950a29ab64e59a5e084eb618fc.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/9a7/9a761a950a29ab64e59a5e084eb618fc.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Капуста квашеная</div>
+                        <div class="gm__menu-weight">1 порция 100 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="765"
+                      data-kcal="276"
+                      data-xe="2.8"
+                      data-unit="100"
+                      data-measure="г"
+                      data-group='["46"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/987/987f4d9198854351e2c70b2bbd09454c.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/987/987f4d9198854351e2c70b2bbd09454c.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Картофель фри</div>
+                        <div class="gm__menu-weight">1 порция 100 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="764"
+                      data-kcal="75"
+                      data-xe="1.3"
+                      data-unit="100"
+                      data-measure="г"
+                      data-group='["46"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/d27/d27167bdf6d3dc7fd675f6f0f478f54f.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/d27/d27167bdf6d3dc7fd675f6f0f478f54f.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Картофельное пюре</div>
+                        <div class="gm__menu-weight">1 порция 100 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="763"
+                      data-kcal="432"
+                      data-xe="0"
+                      data-unit="150"
+                      data-measure="г"
+                      data-group='["46"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/ab2/ab214d587220e9caefda7acb5e061ebe.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/ab2/ab214d587220e9caefda7acb5e061ebe.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Бифштекс</div>
+                        <div class="gm__menu-weight">1 порция 150 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_drink"
+                      data-key="762"
+                      data-kcal="156"
+                      data-xe="0.4"
+                      data-unit="200"
+                      data-measure="мл"
+                      data-group='["47"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/f40/f405e76624cb9dd7205f99d956f6da44.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/f40/f405e76624cb9dd7205f99d956f6da44.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Вино красное 12% алк.</div>
+                        <div class="gm__menu-weight">1 порция 200 мл</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_drink"
+                      data-key="761"
+                      data-kcal="156"
+                      data-xe="0.4"
+                      data-unit="200"
+                      data-measure="мл"
+                      data-group='["47"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/7d5/7d520d368045c57597e3e3c5c6e30b09.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/7d5/7d520d368045c57597e3e3c5c6e30b09.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Вино белое 12% алк.</div>
+                        <div class="gm__menu-weight">1 порция 200 мл</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="760"
+                      data-kcal="82"
+                      data-xe="1.5"
+                      data-unit="200"
+                      data-measure="г"
+                      data-group='["48"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/9f0/9f088a32887236cfab2c3eb137048fe4.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/9f0/9f088a32887236cfab2c3eb137048fe4.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Земляника</div>
+                        <div class="gm__menu-weight">1 порция 200 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="759"
+                      data-kcal="76.8"
+                      data-xe="1.6"
+                      data-unit="80"
+                      data-measure="г"
+                      data-group='["48"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/ea6/ea63b2a226630ecde8b844f9698f2a34.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/ea6/ea63b2a226630ecde8b844f9698f2a34.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Банан</div>
+                        <div class="gm__menu-weight">1 порция 80 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="758"
+                      data-kcal="70.5"
+                      data-xe="1.5"
+                      data-unit="100"
+                      data-measure="г"
+                      data-group='["48"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/c9f/c9f93b552c732184f2f5ff99465f8ed6.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/c9f/c9f93b552c732184f2f5ff99465f8ed6.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Груша</div>
+                        <div class="gm__menu-weight">1 порция 100 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="757"
+                      data-kcal="43"
+                      data-xe="0.7"
+                      data-unit="100"
+                      data-measure="г"
+                      data-group='["48"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/e87/e87a195842e0feda243bd3820858877e.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/e87/e87a195842e0feda243bd3820858877e.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Апельсин</div>
+                        <div class="gm__menu-weight">1 порция 100 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="756"
+                      data-kcal="35"
+                      data-xe="0.6"
+                      data-unit="100"
+                      data-measure="г"
+                      data-group='["48"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/9be/9bee6de9cb76f82c2dd25e27cb44fe46.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/9be/9bee6de9cb76f82c2dd25e27cb44fe46.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Дыня</div>
+                        <div class="gm__menu-weight">1 порция 100 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="755"
+                      data-kcal="27"
+                      data-xe="0.5"
+                      data-unit="100"
+                      data-measure="г"
+                      data-group='["48"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/2f7/2f7bf5a59727c192abd2468fd558457e.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/2f7/2f7bf5a59727c192abd2468fd558457e.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Арбуз</div>
+                        <div class="gm__menu-weight">1 порция 100 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="754"
+                      data-kcal="77"
+                      data-xe="1.33"
+                      data-unit="100"
+                      data-measure="г"
+                      data-group='["49"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/7dd/7dd34de1a411045b01cac3327451ae60.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/7dd/7dd34de1a411045b01cac3327451ae60.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Картофель</div>
+                        <div class="gm__menu-weight">1 порция 100 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="753"
+                      data-kcal="28"
+                      data-xe="0.4"
+                      data-unit="100"
+                      data-measure="г"
+                      data-group='["49"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/07b/07b1a4c4ff9df60d5098730ff9449483.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/07b/07b1a4c4ff9df60d5098730ff9449483.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Капуста белокачанная</div>
+                        <div class="gm__menu-weight">1 порция 100 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="752"
+                      data-kcal="108.6"
+                      data-xe="0.2"
+                      data-unit="60"
+                      data-measure="г"
+                      data-group='["50"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/242/2420f9b20d81ea51116e2d9cce6df93e.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/242/2420f9b20d81ea51116e2d9cce6df93e.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Карп жареный</div>
+                        <div class="gm__menu-weight">1 порция 60 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="751"
+                      data-kcal="54"
+                      data-xe="0"
+                      data-unit="60"
+                      data-measure="г"
+                      data-group='["51"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/1ec/1ec1e9b09610dd2479bf3f3913787ec7.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/1ec/1ec1e9b09610dd2479bf3f3913787ec7.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Камбала</div>
+                        <div class="gm__menu-weight">1 порция 60 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="750"
+                      data-kcal="101"
+                      data-xe="0"
+                      data-unit="60"
+                      data-measure="г"
+                      data-group='["50"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/e08/e08257c3c1f4de45c56a8b1c6787e9a6.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/e08/e08257c3c1f4de45c56a8b1c6787e9a6.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Горбуша отварная</div>
+                        <div class="gm__menu-weight">1 порция 60 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="749"
+                      data-kcal="162"
+                      data-xe="0"
+                      data-unit="75"
+                      data-measure="г"
+                      data-group='["51"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/dc4/dc400ebcf6055e0dd6a919466c8449e7.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/dc4/dc400ebcf6055e0dd6a919466c8449e7.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Индейка жареная</div>
+                        <div class="gm__menu-weight">1 порция 75 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="748"
+                      data-kcal="158"
+                      data-xe="0"
+                      data-unit="75"
+                      data-measure="г"
+                      data-group='["51"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/7d7/7d7f26307ff68ad2feb21012add397fa.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/7d7/7d7f26307ff68ad2feb21012add397fa.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Индейка отварная</div>
+                        <div class="gm__menu-weight">1 порция 75 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="747"
+                      data-kcal="69.6"
+                      data-xe="0.2"
+                      data-unit="60"
+                      data-measure="г"
+                      data-group='["51"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/12c/12c1428431741beb2eb23612b67a4e21.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/12c/12c1428431741beb2eb23612b67a4e21.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Говядина тушеная</div>
+                        <div class="gm__menu-weight">1 порция 60 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="746"
+                      data-kcal="152.4"
+                      data-xe="0"
+                      data-unit="60"
+                      data-measure="г"
+                      data-group='["51"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/b35/b35ffbe0d4cf09d4edda213e4f533201.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/b35/b35ffbe0d4cf09d4edda213e4f533201.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Говядина отварная</div>
+                        <div class="gm__menu-weight">1 порция 60 г</div>
+                      </div>
+                    </div>
+                    <div
+                      class="gm__menu-item gm__menu-item_food"
+                      data-key="745"
+                      data-kcal="114"
+                      data-xe="1"
+                      data-unit="200"
+                      data-measure="мл"
+                      data-group='["53"]'
+                      data-pic="https://shkoladiabeta.ru/upload/iblock/ab0/ab0218e6badde54f1f10413e34f2ed0d.png"
+                    >
+                      <div class="gm__menu-pic">
+                        <img
+                          src="https://shkoladiabeta.ru/upload/iblock/ab0/ab0218e6badde54f1f10413e34f2ed0d.png"
+                          alt
+                        />
+                      </div>
+                      <div class="gm__menu-info">
+                        <div class="gm__menu-title">Йогурт 1,5%</div>
+                        <div class="gm__menu-weight">1 порция 200 мл</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gm__section">
+                  <div class="gm__bg">
+                    <div
+                      class="gm__bg-item"
+                      style="background-image: url(game/Styles/img/bg1.jpg)"
+                    ></div>
+                    <div
+                      class="gm__bg-item"
+                      style="background-image: url(game/Styles/img/bg2.jpg)"
+                    ></div>
+                    <div
+                      class="gm__bg-item"
+                      style="background-image: url(game/Styles/img/bg3.jpg)"
+                    ></div>
+                    <div
+                      class="gm__bg-item"
+                      style="background-image: url(game/Styles/img/bg4.jpg)"
+                    ></div>
+                  </div>
+                  <div class="gm__table">
+                    <div class="gm__plate gm__plate_big">
+                      <div
+                        class="gm__plate-in"
+                        data-warning="gm__warning_main"
+                      ></div>
+                    </div>
+                    <div class="gm__plate gm__plate_small">
+                      <div
+                        class="gm__plate-in"
+                        data-warning="gm__warning_desert"
+                      ></div>
+                    </div>
+                    <div class="gm__cup"><div class="gm__cup-in"></div></div>
+                    <div class="gm__dots">
+                      <button></button>
+                      <button></button>
+                      <button></button>
+                      <button></button>
+                    </div>
+                    <div class="gm__tooltip">
+                      <ul class="gm__tooltip-list">
+                        <li>ХЕ: <span class="gm__tooltip-xe">-</span></li>
+                        <li>Ккал: <span class="gm__tooltip-kcal">-</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="gm__warning gm__warning_main">
+                    <div class="gm__warning-in">
+                      <div class="gm__warning-title">
+                        Основная тарелка заполнена!
+                      </div>
+                      <div class="gm__warning-text">
+                        <p>
+                          На эту тарелку можно добавить не более 7 разных
+                          продуктов.
+                        </p>
+                        <p>
+                          Чтобы добавить новый — удалите любой из уже выбранных.
+                        </p>
+                      </div>
+                      <button class="gm__warning-arrow"></button>
+                    </div>
+                  </div>
+                  <div class="gm__warning gm__warning_desert">
+                    <div class="gm__warning-in">
+                      <div class="gm__warning-title">
+                        Десертная тарелка переполнена!
+                      </div>
+                      <div class="gm__warning-text">
+                        <p>
+                          На эту тарелку можно добавить не более 2 разных
+                          продуктов.
+                        </p>
+                        <p>
+                          Чтобы добавить новый — удалите любой из уже выбранных.
+                        </p>
+                      </div>
+                      <button class="gm__warning-arrow"></button>
+                    </div>
+                  </div>
+                  <div class="gm__warning gm__warning_min">
+                    <div class="gm__warning-in">
+                      <div class="gm__warning-title">
+                        Вы не набрали минимальный набор продуктов
+                      </div>
+                      <div class="gm__warning-text">
+                        <p>
+                          Минимальный набор: <br />
+                          1 продукт в одной из тарелок или 1 напиток в стакане!
+                        </p>
+                      </div>
+                      <button class="gm__warning-arrow"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gm__footer gm__footer_bg">
+                <div class="gm__tip">
+                  <div class="gm__tip-title gm__tip-switch">Помощь</div>
+                  <div class="gm__tip-switch">
+                    <ul>
+                      <li><i></i><span>выкл</span></li>
+                      <li><i></i><span>вкл</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <button class="gm__ask"><i></i></button>
+                <button class="gm__btn gm__btn_next" data-step="gm__step_5">
+                  Далее
+                </button>
+              </div>
+              <div class="gm__help">
+                <div class="gm__help-title">ПРОДУКТЫ</div>
+                <div class="gm__help-lines"></div>
+                <div class="gm__help-select">Группа продуктов</div>
+                <div class="gm__help-text">
+                  Вы можете выбрать до 10 продуктов из меню (не более 5 порций
+                  каждый), включая напиток
+                </div>
+                <ul class="gm__help-menu">
+                  <li><img src="game/Styles/img/help-prod1.png" alt /></li>
+                  <li><img src="game/Styles/img/help-prod2.png" alt /></li>
+                  <li><img src="game/Styles/img/help-prod3.png" alt /></li>
+                  <li><img src="game/Styles/img/help-prod4.png" alt /></li>
+                  <li><img src="game/Styles/img/help-prod5.png" alt /></li>
+                </ul>
+                <div class="gm__help-desert"><span>Десерт</span></div>
+                <div class="gm__help-plate">
+                  <div class="gm__help-plate-in">
+                    <div class="gm__help-plate-head">
+                      <img src="game/Styles/img/help-plate-main.png" alt /><span
+                        >Основное<br />блюдо</span
+                      >
+                    </div>
+                    <div class="gm__help-plate-text">
+                      Перетащите иконку продукта<br />на тарелку. Чтобы удалить
+                      продукт из тарелки — перетащите его<br />в любую другую зону
+                      игры.
+                    </div>
+                  </div>
+                </div>
+                <div class="gm__help-cup"><span>Напиток</span></div>
+                <div class="gm__help-switch">
+                  <span>Режим подсказок</span
+                  ><img src="game/Styles/img/help-curve-switch.png" alt /><b
+                    >выкл</b
+                  >
+                </div>
+                <div class="gm__help-ask">
+                  <span>Помощь</span
+                  ><img src="game/Styles/img/help-ask.png" alt /><img
+                    src="game/Styles/img/help-curve-ask.png"
+                    alt
+                  />
+                </div>
+                <div class="gm__curve">
+                  <img src="game/Styles/img/help-curve-prod.png" alt />
+                </div>
+                <div class="gm__help-bg">
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <img src="game/Styles/img/help-curve-bg.png" alt /><span
+                    >Смена фона</span
+                  >
+                </div>
+                <button class="gm__help-close">
+                  <span>закрыть</span><i></i>
+                </button>
+              </div>
+            </div>
+            <!-- 5-->
+            <div class="gm__step gm__step_5">
+              <div class="gm__page">
+                <div class="gm__page-vertical">
+                  <div class="gm__result">
+                    <div class="gm__result-title">Ваша тарелка:</div>
+                    <div class="gm__result-in">
+                      <div class="gm__result-table">
+                        <table></table>
+                      </div>
+                      <div class="gm__result-stats">
+                        <ul>
+                          <li>
+                            <span>В вашей тарелке:</span
+                            ><span class="gm__selected-xe"></span
+                            ><span>и</span></span><span class="gm__selected-kcal"></span>
+                          </li>
+                          <li>
+                            <span>Запланировано:</span
+                            ><span class="gm__plan-xe"></span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="gm__result-text">
+                      <i class="gm__result-error"></i>
+                      <p>
+                        Ваша тарелка содержит больше ХЕ, чем было запланировано.
+                        Ошибка в расчёте ХЕ может повлечь за собой ошибку в
+                        расчёте дозы инсулина и привести к гипо- или
+                        гипергликемии. Скорректируйте ваш выбор или изучите
+                        разделы «Школы» по
+                        <a href="/living/food/">правильному питанию</a>.
+                      </p>
+                    </div>
+                    <div class="gm__result-text">
+                      <i class="gm__result-error"></i>
+                      <p>
+                        Ваша тарелка содержит меньше ХЕ, чем было запланировано.
+                        Ошибка в расчёте ХЕ может повлечь за собой ошибку в
+                        расчёте дозы инсулина и привести к гипо- или
+                        гипергликемии. Скорректируйте ваш выбор или изучите
+                        разделы «Школы» по
+                        <a href="/living/food/">правильному питанию</a>.
+                      </p>
+                    </div>
+                    <div class="gm__result-text">
+                      <i class="gm__result-error"></i>
+                      <p>
+                        Ваш результат немного отличается от того количества ХЕ,
+                        которое было запланировано. Попробуйте в следующий раз
+                        добиться более точного совпадения. Скорректируйте ваш
+                        выбор или изучите разделы «Школы» по
+                        <a href="/living/food/">правильному питанию</a>.
+                      </p>
+                    </div>
+                    <div class="gm__result-text">
+                      <i class="gm__result-success"></i>
+                      <p>
+                        Количество ХЕ в вашей тарелке в точности совпадает с тем
+                        количеством, которое вы себе запланировали. Поздравляем,
+                        это отличный результат! Возможно, вам также будет
+                        интересно изучить разделы «Школы» по
+                        <a href="/living/food/"> правильному питанию</a>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gm__footer gm__footer_table">
+                <div class="gm__footer-cell">
+                  <button class="gm__btn gm__btn_edit" data-step="gm__step_4">
+                    <span class="gm__btn_edit-font">Скорректировать тарелку</span>
+                  </button>
+                </div>
+                <div class="gm__footer-cell">
+                  <button class="gm__btn gm__btn_new" data-step="gm__step_2">
+                    <span class="gm__btn_new-font">Собрать новую тарелку</span>
+                  </button>
+                </div>
+                <div class="gm__footer-cell">
+                  <button class="gm__btn gm__btn_print">
+                    <span class="gm__btn_print-font">Печать результатов</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__top">
+            <a class="footer__logo" href="/"
+              ><img
+                src="img/icons/logo.png"
+                width="205"
+                height="40"
+                alt="Школа диабета"
+            /></a>
+            <div class="footer__contacts">
+              <p>Горячая линия «PRO ДИАБЕТ»</p>
+              <a href="tel:+78002006570">8 800 200-65-70 </a>
+            </div>
+          </div>
+          <div class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <div class="footer__nav-headline">
+                  <a class="footer__nav-link" href="/0">Школа</a>
+                  <button
+                    class="btn btn--reset footer__nav-toggle"
+                    aria-label="Toggle submenu"
+                  ></button>
+                </div>
+                <ul class="footer__nav-child-list">
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c0"
+                      >Сахарный диабет 1-го типа</a
+                    >
+                  </li>
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c1"
+                      >Сахарный диабет 2-го типа</a
+                    >
+                  </li>
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c2"
+                      >Инсулинотерапия</a
+                    >
+                  </li>
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c3"
+                      >Сахарный диабет у детей</a
+                    >
+                  </li>
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c4"
+                      >Игра «Идеальная тарелка»</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="footer__nav-item">
+                <div class="footer__nav-headline">
+                  <a class="footer__nav-link" href="/1">О диабете</a>
+                  <button
+                    class="btn btn--reset footer__nav-toggle"
+                    aria-label="Toggle submenu"
+                  ></button>
+                </div>
+                <ul class="footer__nav-child-list">
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c0"
+                      >О сахарном диабете</a
+                    >
+                  </li>
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c1">Самоконтроль</a>
+                  </li>
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c2">Питание</a>
+                  </li>
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c3">Гипогликемия</a>
+                  </li>
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c4"
+                      >Физическая активность</a
+                    >
+                  </li>
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c5">Инсулин</a>
+                  </li>
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c6"
+                      >Гликемический индекс</a
+                    >
+                  </li>
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c7"
+                      >Материалы для печати</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="footer__nav-item">
+                <div class="footer__nav-headline">
+                  <a class="footer__nav-link" href="/2">Лечение</a>
+                  <button
+                    class="btn btn--reset footer__nav-toggle"
+                    aria-label="Toggle submenu"
+                  ></button>
+                </div>
+                <ul class="footer__nav-child-list">
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c0">Инсулин</a>
+                  </li>
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c1"
+                      >Лечение диабета 1-го типа</a
+                    >
+                  </li>
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c2"
+                      >Лечение диабета 2-го типа</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="footer__nav-item">
+                <div class="footer__nav-headline">
+                  <a class="footer__nav-link" href="/3">Библиотека знаний</a>
+                  <button
+                    class="btn btn--reset footer__nav-toggle"
+                    aria-label="Toggle submenu"
+                  ></button>
+                </div>
+                <ul class="footer__nav-child-list">
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c0"
+                      >Общие вопросы про диабет</a
+                    >
+                  </li>
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c1"
+                      >Вопросы о питании при сахарном диабете</a
+                    >
+                  </li>
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c2"
+                      >Физическая активность</a
+                    >
+                  </li>
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c3"
+                      >Вопросы про самоконтроль при сахарном диабете</a
+                    >
+                  </li>
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c4"
+                      >Вопросы о лечении сахарного диабета</a
+                    >
+                  </li>
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c5"
+                      >Вопросы про опасные ситуации при сахарном диабете</a
+                    >
+                  </li>
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c6"
+                      >Вопросы про осложнения при сахарном диабете</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="footer__nav-item">
+                <div class="footer__nav-headline">
+                  <a class="footer__nav-link" href="/4">О нас</a>
+                  <button
+                    class="btn btn--reset footer__nav-toggle"
+                    aria-label="Toggle submenu"
+                  ></button>
+                </div>
+                <ul class="footer__nav-child-list">
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c0"
+                      >О Школе диабета</a
+                    >
+                  </li>
+                  <li class="footer__nav-child-item">
+                    <a class="footer__nav-child-link" href="#!c1"
+                      >Обратная связь</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copy">
+              <p>
+                © 2010-2024. Представительство АО «Санофи-авентис груп» (Франция)
+                г. Москва. Все права защищены. Сайт предназначен для посетителей
+                из Российской Федерации.
+              </p>
+            </div>
+            <div class="footer__submenu">
+              <ul>
+                <li><a href="#">Обратная связь</a></li>
+                <li><a href="#">Для специалистов</a></li>
+                <li><a href="#">Карта сайта</a></li>
+                <li><a href="#">Официальное уведомление</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
